@@ -1,0 +1,128 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.416);
+  background-image: url("../Media/img/stars.gif");
+}
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  cursor: default;
+  bottom: 4.5%;
+  font-size: clamp(0.7em, 0.9vw, 2.5em);
+}
+
+.subTitle {
+  cursor: default;
+  font-family: "Rubik", san-serif;
+  font-size: clamp(0.5vh, 2.5vw, 1em);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.845);
+}
+
+.pixie_tale {
+  cursor: default;
+  font-family: "Rubik", san-serif;
+  background-color: rgba(0, 0, 0, 0.445);
+  text-align: justify;
+  margin: 0.1% 8% 2% 8%;
+  font-size: clamp(1.5em, 1vw, 5em);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.772);
+  z-index: -1;
+}
+
+.pixie_dialog {
+  cursor: default;
+  font-family: "Rubik", san-serif;
+  background-color: rgba(0, 0, 0, 0.445);
+  text-align: justify;
+  color: rgb(244, 143, 177);
+  text-shadow: 1rem 0.1rem 12rem rgba(245, 177, 206, 0.81);
+  margin: 0.1% 8% 2% 8%;
+  font-size: clamp(1.5em, 1vw, 5em);
+  border: solid 3px rgba(224, 224, 224, 0.177);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.mc_dialog {
+  cursor: default;
+  font-family: "Rubik", san-serif;
+  background-color: rgba(0, 0, 0, 0.445);
+  text-align: justify;
+  margin: 0.1% 8% 2% 8%;
+  font-size: clamp(1.5em, 1vw, 5em);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.772);
+  border: solid 3px rgba(224, 224, 224, 0.177);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.media {
+  height: 100vh;
+}
+
+#image {
+  width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  #btn {
+    width: 35vw;
+    margin-bottom: 2%;
+  }
+
+  #p_text {
+    font-size: 0.8rem;
+  }
+
+  #mc_text {
+    font-size: 0.8rem;
+  }
+
+  .media {
+    max-height: 15vh;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  #btn {
+    width: 35vw;
+    margin-bottom: 10%;
+  }
+
+  #p_text {
+    font-size: 1rem;
+  }
+
+  #mc_text {
+    font-size: 1rem;
+  }
+
+  .media {
+    height: 20vh;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border: 5px solid rgb(23, 22, 22);
+  box-shadow: inset 0 0 2.5px 2px rgba(58, 57, 58, 0.866);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, rgba(26, 25, 26, 0.786), pink);
+  border-radius: 5px;
+}
